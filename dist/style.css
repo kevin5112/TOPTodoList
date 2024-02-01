@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-bg-color: #ccc;
+  --secondary-bg-color: #eee;
+  --third-bg-color: #fff;
+  --primary-text-color: #333;
+  --secondary-text-color: #555;
+  --third-text-color: #777;
+  --xs: 8px;
+  --sm: 16px;
+  --md: 24px;
+  --lg: 32px;
+  --xl: 48px;
+  --xxl: 64px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 24px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  gap: 0.5em;
+  height: 90%;
+}
+
+/* header */
+.header {
+  display: flex;
+  background-color: #aaa;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+}
+
+.title {
+  font-size: var(--xl);
+  font-weight: 600;
+  padding: var(--sm);
+}
+
+/* nav bar */
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-bg-color);
+  padding: 1rem 2rem;
+  height: 100%;
+}
+
+/* container */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--lg);
+  justify-content: top;
+  align-items: center;
+}
+
+/* todo list */
+.todo-container {
+  background-color: var(--third-bg-color);
+  padding: var(--md);
+  border-radius: var(--md);
+  width: 50%;
+}
+
+/* add todo button */
+.add-todo-btn {
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+.add-todo-btn:hover {
+  background-color: var(--primary-text-color);
+  color: white;
+  cursor: pointer;
+}
+
+/* todo button and input sizing */
+.add-todo-sizing {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.3rem;
+  border: 1px solid var(--secondary-text-color);
+  background-color: white;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: var(--sm);
+  box-shadow: 2px 2px 2px --secondary-text-color;
+}
+
+/* hidden */
+.hidden {
+  display: none;
+}

@@ -4,6 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <script src="bundle.js" defer></script>
+    <header class="header">
+      <h1 class="title">Todo List</h1>
+    </header>
+    <div class="content">
+      <nav class="nav-bar" id="navBar">
+        <ul class="nav-list" id="navList">
+          <li class="inbox" id="inbox">Inbox</li>
+          <li class="projects" id="projects">Projects</li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="todo-container">
+          <h3 class="todo-list-title">TODO LIST</h3>
+          <div class="todo-list" id="todoList">
+            <div class="todo" id="todo1">
+              <input type="checkbox" />
+              <span>take out trash</span>
+            </div>
+            <div class="todo" id="todo2">
+              <input type="checkbox" />
+              <span>walk the dog</span>
+            </div>
+          </div>
+          <button class="add-todo-btn add-todo-sizing" id="addTodoBtn">
+            Add new Todo
+          </button>
+          <input
+            type="text"
+            class="todo-input add-todo-sizing hidden"
+            id="addTodoInput"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
